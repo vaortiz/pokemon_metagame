@@ -179,7 +179,52 @@ def scrape_pokepast(link):
                 pokemon_data['Mov2'] = span_tags[4].next_sibling.strip()  # Texto después del sexto
                 pokemon_data['Mov3'] = span_tags[5].next_sibling.strip()  # Texto después del séptimo
                 pokemon_data['Mov4'] = span_tags[6].next_sibling.strip()  # Texto después del octavo
-
+                
+            elif span_tags[4].next_sibling.strip() == 'Sheer Cold' and span_tags[2].text == 'Tera Type: ' and span_tags[0].next_sibling.strip()!= '':
+            
+                pokemon_data['Pokémon'] = span_tags[0].text 
+                pokemon_data['Objeto'] = span_tags[0].next_sibling.strip() 
+                pokemon_data['Habilidad'] = span_tags[1].next_sibling.strip()
+                pokemon_data['Teratipo'] = span_tags[3].text
+                mov_texts = [span_tags[len(span_tags)-3].next_sibling.strip(), span_tags[len(span_tags)-2].next_sibling.strip(), span_tags[len(span_tags)-1].next_sibling.strip()]
+        
+                movimientos = []
+        
+                # Procesar cada elemento en mov_texts
+                for mov_text in mov_texts:
+                    # Separar por '\n-' si está presente, de lo contrario, solo agregar el texto
+                    mov_parts = mov_text.split('\n-') if '\n-' in mov_text else [mov_text]
+        
+                    # Agregar cada parte a la lista de movimientos
+                    movimientos.extend([part.strip() for part in mov_parts])
+        
+                # Asignar los movimientos a las columnas correspondientes
+                for i, movimiento in enumerate(movimientos[:4]):
+                    pokemon_data[f'Mov{i + 1}'] = movimiento
+            
+            elif span_tags[0].text == 'Capsakid':
+        
+                pokemon_data['Pokémon'] = span_tags[0].text 
+                pokemon_data['Objeto'] = span_tags[0].next_sibling.strip() 
+                pokemon_data['Habilidad'] = span_tags[1].next_sibling.strip()
+                pokemon_data['Teratipo'] = span_tags[3].text
+                mov_texts = [span_tags[len(span_tags)-3].next_sibling.strip(), span_tags[len(span_tags)-2].next_sibling.strip(), span_tags[len(span_tags)-1].next_sibling.strip()]
+        
+                movimientos = []
+        
+                # Procesar cada elemento en mov_texts
+                for mov_text in mov_texts:
+                    # Separar por '\n-' si está presente, de lo contrario, solo agregar el texto
+                    mov_parts = mov_text.split('\n-') if '\n-' in mov_text else [mov_text]
+        
+                    # Agregar cada parte a la lista de movimientos
+                    movimientos.extend([part.strip() for part in mov_parts])
+        
+                # Asignar los movimientos a las columnas correspondientes
+                for i, movimiento in enumerate(movimientos[:4]):
+                    pokemon_data[f'Mov{i + 1}'] = movimiento    
+            
+                
             else:
                 # Caso típico de longitud 7
                 pokemon_data['Pokémon'] = span_tags[0].previous_sibling.strip().split('@')[0].strip() 
