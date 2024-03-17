@@ -125,7 +125,7 @@ headers = {
 
 # Parámetros de consulta opcionales (por ejemplo, limit para especificar la cantidad de resultados)
 params = {
-    "limit": 80,
+    "limit": 120,
     "game": "VGC",
     'format': 'SVF'
 }
