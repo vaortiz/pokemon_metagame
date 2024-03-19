@@ -65,8 +65,14 @@ all_tours %>%
 
 write_excel_csv(sum1, "cluster1.csv")
 
+###La caracterización fue en excel######
+
 carac_final <- read_delim("cluster1.csv", 
                           delim = ";", escape_double = FALSE, trim_ws = TRUE)
 
 carac_final %>% 
   filter(cluster!="Other")->carac_sig
+
+carac_sig %>% select(5,13,21,29,37,45) %>% pivot_longer(everything()) %>% select(value) %>% unique %>% as.vector
+
+
