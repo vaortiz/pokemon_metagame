@@ -89,44 +89,26 @@ carac_sig %>%
   filter(cluster=="Articuno Offense") %>% View
 
 
-columnas_equipo <- grep(pattern = "^[0-9]+_", colnames(carac_sig), value = TRUE)
-columnas_rondas <- grep(pattern = "^Ronda_", colnames(carac_sig), value = TRUE)
-columnas_resultados <- grep(pattern = "^Resultado_", colnames(carac_sig), value = TRUE)
 
-agrupar_datos <- function(fila) {
-  equipo_pokemon <- as.list(fila[columnas_equipo])
-  rondas_resultados <- lapply(1:length(columnas_rondas), function(i) {
-    list(Ronda = fila[columnas_rondas[i]], Resultado = fila[columnas_resultados[i]])
-  })
-  lista_datos <- list(Equipo = equipo_pokemon, Rondas_Resultados = rondas_resultados)
-  return(lista_datos)
-}
+library(tidyr)
 
-a<-apply(carac_sig, 1, agrupar_datos)
-a[1]
+###### HABEMOS FACT TABLE POKEMON ##########
 
-datos_jugador_torneo <- list(
-  Nombre = carac_sig$Nombre,
-  Torneo = carac_sig$Torneo,
-  Nacionalidad = carac_sig$Nacionalidad,
-  Tipo_torneo = carac_sig$Tipo_Torneo
-)
+cbind(carac_sig %>% 
+        select(grep("^\\d+_", names(carac_sig), value = TRUE)) %>% 
+        split.default(rep(1:(345 %/% 8), each = 8, length.out = 48)) %>% 
+        lapply(function(mat) {
+          colnames(mat) <- c("Pokémon","Objeto","Habilidad","Teratipo","Mov1","Mov2","Mov3","Mov4")
+          return(mat)
+        }) %>% do.call(rbind, .) , carac_sig %>% 
+        select(c(Torneo, Nombre, cluster)) %>%
+        .[rep(row.names(.), times = 6), ] 
+) %>%  arrange(cluster, Nombre) -> fact_pokemon
 
-# Crear un dataframe con la información del equipo Pokémon para cada jugador
-columnas_equipo <- grep(pattern = "^[0-9]+_", colnames(carac_sig))
-equipo_pokemon <- carac_sig[, columnas_equipo]
+fact_pokemon$cluster %>% table
 
-# Crear una lista con los datos de las rondas y resultados
-rondas_resultados <- list(
-  Rondas = carac_sig[, grep("^Ronda_", colnames(carac_sig))],
-  Resultados = carac_sig[, grep("^Resultado_", colnames(carac_sig))]
-)
+fact_pokemon %>%
+  filter(cluster == "Articuno Offense") %>%
+  group_by(Pokémon) %>%
+  summarise(count = n())
 
-# Combinar todas las instancias en una lista completa
-lista_completa <- list(
-  Datos_Jugador_Torneo = datos_jugador_torneo,
-  Equipo_Pokemon = equipo_pokemon,
-  Rondas_Resultados = rondas_resultados
-)
-
-lista_completa
