@@ -107,8 +107,49 @@ cbind(carac_sig %>%
 
 fact_pokemon$cluster %>% table
 
+######### EJEMPLO DE GRAFICOS Y TABLAS NECESARIAS PARA EL DASHBOARD ##########
+
+fact_pokemon %>% 
+  group_by(cluster) %>% 
+  summarise(Usage = n()/6) %>% 
+  arrange(desc(Usage))
+
+### CON ARTICUNO OFFENSE SE PUEDE HACER UN GRAFICO DE % DE USO ###
+
 fact_pokemon %>%
   filter(cluster == "Articuno Offense") %>%
   group_by(Pokémon) %>%
-  summarise(count = n())
+  summarise(Usage = n_distinct(Nombre) / n_distinct(filter(fact_pokemon, cluster == "Articuno Offense")$Nombre) * 100) %>% 
+  arrange(desc(Usage))
 
+#CON CADA POKE DEL % DE USO SE PUEDE HACER UN GRAFICO DE % DE USO DE OBJETOS HABILIDADES ETC ###
+
+fact_pokemon %>%
+  filter(cluster == "Articuno Offense") %>% 
+  filter(Pokémon == "Articuno") %>% 
+  group_by(Objeto) %>%
+  summarise(Objetos= n()/n_distinct(filter(fact_pokemon, cluster == "Articuno Offense")$Nombre) * 100) %>% 
+  arrange(desc(Objetos))
+
+fact_pokemon %>%
+  filter(cluster == "Articuno Offense") %>% 
+  filter(Pokémon == "Articuno") %>% 
+  group_by(Habilidad) %>%
+  summarise(Habilidades= n()/n_distinct(filter(fact_pokemon, cluster == "Articuno Offense")$Nombre) * 100) %>% 
+  arrange(desc(Habilidades))
+
+fact_pokemon %>%
+  filter(cluster == "Articuno Offense") %>% 
+  filter(Pokémon == "Articuno") %>% 
+  group_by(Teratipo) %>%
+  summarise(Teratipos= n()/n_distinct(filter(fact_pokemon, cluster == "Articuno Offense")$Nombre) * 100) %>% 
+  arrange(desc(Teratipos))
+
+fact_pokemon %>%
+  filter(cluster == "Articuno Offense") %>% 
+  filter(Pokémon == "Articuno") %>% 
+  select(Mov1, Mov2, Mov3, Mov4) %>% 
+  pivot_longer(everything(), values_to = "Move") %>% 
+  group_by(Move) %>%
+  summarise(Moves= n()/n_distinct(filter(fact_pokemon, cluster == "Articuno Offense")$Nombre) * 100) %>% 
+  arrange(desc(Moves))
