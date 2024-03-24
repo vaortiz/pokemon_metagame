@@ -111,7 +111,7 @@ fact_pokemon$cluster %>% table
 
 fact_pokemon %>% 
   group_by(cluster) %>% 
-  summarise(Usage = n()/6) %>% 
+  summarise(Usage = (n()/6)/nrow(carac_sig)*100) %>% 
   arrange(desc(Usage))
 
 ### CON ARTICUNO OFFENSE SE PUEDE HACER UN GRAFICO DE % DE USO ###
@@ -153,3 +153,38 @@ fact_pokemon %>%
   group_by(Move) %>%
   summarise(Moves= n()/n_distinct(filter(fact_pokemon, cluster == "Articuno Offense")$Nombre) * 100) %>% 
   arrange(desc(Moves))
+
+
+########ARCHIVO CON LOS MOVIMIENTOS INDIVIDUALIZADOS PARA TABLEAU######
+
+fact_pokemon %>%
+  pivot_longer(cols = c(Mov1, Mov2, Mov3, Mov4)) %>% 
+  rename(Movimiento = value) %>%
+  select(-name) -> Mov_ind
+
+write_excel_csv(Mov_ind, "Mov_ind.csv")
+
+
+###############################################
+##### PARA EL WINRATE DE LOS ARQUETIPOS #######
+###########################################
+
+
+cbind(carac_sig %>% 
+        select(c(Torneo, Nombre)) %>%
+        .[rep(row.names(.), times = 18), ] , carac_sig %>% 
+        select(53:88) %>% 
+        split.default(rep(1:(345 %/% 2), each = 2, length.out = 36)) %>% 
+        lapply(function(mat) {
+          colnames(mat) <- c("Ronda","Resultado")
+          return(mat)
+        }) %>% do.call(rbind, .)) %>% arrange(Nombre,Torneo, Ronda) ->pivot.rondas
+
+
+cbind(merge(pivot.rondas, carac_sig, by.x = c("Nombre", "Torneo"), by.y = c("Nombre", "Torneo"), all.x = TRUE) %>% 
+        select(1:4, cluster) %>% rename(Arquetipo1=cluster) %>% arrange(Nombre, Torneo, Ronda) , merge(pivot.rondas, carac_sig, by.x = c("Ronda", "Torneo"), by.y = c("Nombre", "Torneo"), all.x = TRUE) %>% 
+        select(1:4, cluster) %>% select(Nombre, Torneo, Ronda, Resultado, cluster) %>% rename(Arquetipo2=cluster) %>% arrange(Nombre, Torneo, Ronda)) %>% 
+  select(1:5, Arquetipo2) %>% na.omit %>% group_by(Arquetipo1, Arquetipo2) %>% summarise(Wins = sum(Resultado == "Win"), Losses = sum(Resultado == "Loss")) %>% arrange(Arquetipo1, Arquetipo2) %>% 
+  mutate(Winrate = Wins/(Wins+Losses)) %>% write_excel_csv("winrate.csv")
+
+

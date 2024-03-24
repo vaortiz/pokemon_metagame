@@ -1,0 +1,332 @@
+﻿"Arquetipo1","Arquetipo2","Wins","Losses","Winrate"
+"American Balance","Dondozo-Tatsu",1,0,1
+"American Balance","Gholdengo Control",2,3,0.4
+"American Balance","Japan Balance",2,3,0.4
+"American Balance","KOG SetUp",8,2,0.8
+"American Balance","P2 Balance",2,0,1
+"American Balance","P2 Control",0,1,0
+"American Balance","Pao Prio",1,1,0.5
+"American Balance","Psyspam Offense",2,2,0.5
+"American Balance","Rain Offense",1,2,0.3333333333333333
+"American Balance","Roaring SetUp",2,1,0.6666666666666666
+"American Balance","SemiTR",0,1,0
+"American Balance","Spanish Balance",0,2,0
+"American Balance","Sun HardTR",1,1,0.5
+"American Balance","Sun Offense",0,1,0
+"American Balance","Tailwind HO",0,3,0
+"American Balance","Turbo BloodMoon",3,1,0.75
+"Articuno Offense","Articuno Offense",3,3,0.5
+"Articuno Offense","Gholdengo Control",1,1,0.5
+"Articuno Offense","Japan Balance",1,0,1
+"Articuno Offense","KOG SetUp",1,1,0.5
+"Articuno Offense","Rain Offense",1,1,0.5
+"Articuno Offense","Roaring SetUp",2,0,1
+"Articuno Offense","SUS Control",1,1,0.5
+"Articuno Offense","SemiTR",2,0,1
+"Articuno Offense","Spanish Balance",2,0,1
+"Articuno Offense","Sun HardTR",1,1,0.5
+"Articuno Offense","Sun Offense",0,2,0
+"Articuno Offense","Tailwind HO",3,3,0.5
+"Articuno Offense","Turbo BloodMoon",1,1,0.5
+"Dondozo-Tatsu","American Balance",0,1,0
+"Dondozo-Tatsu","Dondozo-Tatsu",1,1,0.5
+"Dondozo-Tatsu","Gholdengo Control",3,1,0.75
+"Dondozo-Tatsu","Japan Balance",1,1,0.5
+"Dondozo-Tatsu","KOG SetUp",1,5,0.16666666666666666
+"Dondozo-Tatsu","P2 Control",1,1,0.5
+"Dondozo-Tatsu","Pao Prio",6,3,0.6666666666666666
+"Dondozo-Tatsu","Psyspam Offense",2,3,0.4
+"Dondozo-Tatsu","Rain Offense",2,2,0.5
+"Dondozo-Tatsu","Roaring SetUp",0,2,0
+"Dondozo-Tatsu","SUS Control",1,0,1
+"Dondozo-Tatsu","SemiTR",1,1,0.5
+"Dondozo-Tatsu","Spanish Balance",3,2,0.6
+"Dondozo-Tatsu","Sun HardTR",3,1,0.75
+"Dondozo-Tatsu","Sun Offense",3,1,0.75
+"Dondozo-Tatsu","Tailwind HO",1,1,0.5
+"Dondozo-Tatsu","Turbo BloodMoon",3,0,1
+"Gholdengo Control","American Balance",1,1,0.5
+"Gholdengo Control","Articuno Offense",1,1,0.5
+"Gholdengo Control","Dondozo-Tatsu",1,2,0.3333333333333333
+"Gholdengo Control","Gholdengo Control",8,8,0.5
+"Gholdengo Control","Japan Balance",3,4,0.42857142857142855
+"Gholdengo Control","KOG SetUp",6,8,0.42857142857142855
+"Gholdengo Control","P2 Balance",1,0,1
+"Gholdengo Control","P2 Control",5,1,0.8333333333333334
+"Gholdengo Control","Pao Prio",8,11,0.42105263157894735
+"Gholdengo Control","Psyspam Offense",2,0,1
+"Gholdengo Control","Rain Offense",0,1,0
+"Gholdengo Control","Roaring SetUp",3,2,0.6
+"Gholdengo Control","SUS Control",1,1,0.5
+"Gholdengo Control","SemiTR",5,5,0.5
+"Gholdengo Control","Spanish Balance",5,7,0.4166666666666667
+"Gholdengo Control","Sun HardTR",5,4,0.5555555555555556
+"Gholdengo Control","Sun Offense",4,4,0.5
+"Gholdengo Control","Tailwind HO",4,4,0.5
+"Gholdengo Control","Turbo BloodMoon",6,1,0.8571428571428571
+"Japan Balance","American Balance",3,2,0.6
+"Japan Balance","Articuno Offense",0,1,0
+"Japan Balance","Dondozo-Tatsu",1,1,0.5
+"Japan Balance","Gholdengo Control",4,3,0.5714285714285714
+"Japan Balance","Japan Balance",11,11,0.5
+"Japan Balance","KOG SetUp",3,6,0.3333333333333333
+"Japan Balance","P2 Balance",1,2,0.3333333333333333
+"Japan Balance","P2 Control",2,0,1
+"Japan Balance","Pao Prio",2,4,0.3333333333333333
+"Japan Balance","Psyspam Offense",1,0,1
+"Japan Balance","Rain Offense",1,2,0.3333333333333333
+"Japan Balance","SUS Control",2,1,0.6666666666666666
+"Japan Balance","SemiTR",6,2,0.75
+"Japan Balance","Spanish Balance",1,5,0.16666666666666666
+"Japan Balance","Sun HardTR",2,2,0.5
+"Japan Balance","Sun Offense",4,4,0.5
+"Japan Balance","Tailwind HO",1,3,0.25
+"Japan Balance","Turbo BloodMoon",0,2,0
+"KOG SetUp","American Balance",1,4,0.2
+"KOG SetUp","Articuno Offense",1,1,0.5
+"KOG SetUp","Dondozo-Tatsu",4,1,0.8
+"KOG SetUp","Gholdengo Control",8,6,0.5714285714285714
+"KOG SetUp","Japan Balance",6,3,0.6666666666666666
+"KOG SetUp","KOG SetUp",6,6,0.5
+"KOG SetUp","P2 Balance",3,6,0.3333333333333333
+"KOG SetUp","P2 Control",1,3,0.25
+"KOG SetUp","Pao Prio",3,1,0.75
+"KOG SetUp","Psyspam Offense",7,5,0.5833333333333334
+"KOG SetUp","Rain Offense",2,2,0.5
+"KOG SetUp","Roaring SetUp",2,4,0.3333333333333333
+"KOG SetUp","SUS Control",2,4,0.3333333333333333
+"KOG SetUp","SemiTR",5,4,0.5555555555555556
+"KOG SetUp","Spanish Balance",2,6,0.25
+"KOG SetUp","Sun HardTR",4,2,0.6666666666666666
+"KOG SetUp","Sun Offense",1,1,0.5
+"KOG SetUp","Tailwind HO",13,6,0.6842105263157895
+"KOG SetUp","Turbo BloodMoon",6,10,0.375
+"P2 Balance","American Balance",0,2,0
+"P2 Balance","Gholdengo Control",0,1,0
+"P2 Balance","Japan Balance",2,1,0.6666666666666666
+"P2 Balance","KOG SetUp",6,3,0.6666666666666666
+"P2 Balance","P2 Balance",1,1,0.5
+"P2 Balance","P2 Control",1,4,0.2
+"P2 Balance","Pao Prio",1,2,0.3333333333333333
+"P2 Balance","Psyspam Offense",6,0,1
+"P2 Balance","Rain Offense",1,0,1
+"P2 Balance","Roaring SetUp",0,3,0
+"P2 Balance","SUS Control",1,2,0.3333333333333333
+"P2 Balance","SemiTR",0,2,0
+"P2 Balance","Sun HardTR",1,1,0.5
+"P2 Balance","Sun Offense",0,1,0
+"P2 Balance","Tailwind HO",3,2,0.6
+"P2 Balance","Turbo BloodMoon",3,2,0.6
+"P2 Control","American Balance",1,0,1
+"P2 Control","Dondozo-Tatsu",1,1,0.5
+"P2 Control","Gholdengo Control",1,5,0.16666666666666666
+"P2 Control","Japan Balance",0,2,0
+"P2 Control","KOG SetUp",3,1,0.75
+"P2 Control","P2 Balance",4,1,0.8
+"P2 Control","P2 Control",1,1,0.5
+"P2 Control","Pao Prio",1,0,1
+"P2 Control","Psyspam Offense",0,1,0
+"P2 Control","SUS Control",2,0,1
+"P2 Control","SemiTR",1,0,1
+"P2 Control","Spanish Balance",2,1,0.6666666666666666
+"P2 Control","Sun HardTR",0,1,0
+"P2 Control","Sun Offense",0,1,0
+"P2 Control","Tailwind HO",0,2,0
+"P2 Control","Turbo BloodMoon",3,2,0.6
+"Pao Prio","American Balance",1,1,0.5
+"Pao Prio","Dondozo-Tatsu",3,6,0.3333333333333333
+"Pao Prio","Gholdengo Control",11,8,0.5789473684210527
+"Pao Prio","Japan Balance",4,2,0.6666666666666666
+"Pao Prio","KOG SetUp",1,3,0.25
+"Pao Prio","P2 Balance",2,1,0.6666666666666666
+"Pao Prio","P2 Control",0,1,0
+"Pao Prio","Pao Prio",19,19,0.5
+"Pao Prio","Psyspam Offense",1,2,0.3333333333333333
+"Pao Prio","Rain Offense",4,1,0.8
+"Pao Prio","SUS Control",1,0,1
+"Pao Prio","SemiTR",6,6,0.5
+"Pao Prio","Spanish Balance",1,3,0.25
+"Pao Prio","Sun HardTR",2,8,0.2
+"Pao Prio","Sun Offense",0,1,0
+"Pao Prio","Tailwind HO",6,3,0.6666666666666666
+"Pao Prio","Turbo BloodMoon",2,2,0.5
+"Psyspam Offense","American Balance",2,1,0.6666666666666666
+"Psyspam Offense","Dondozo-Tatsu",0,2,0
+"Psyspam Offense","Gholdengo Control",0,2,0
+"Psyspam Offense","Japan Balance",0,1,0
+"Psyspam Offense","KOG SetUp",5,7,0.4166666666666667
+"Psyspam Offense","P2 Balance",0,6,0
+"Psyspam Offense","P2 Control",1,0,1
+"Psyspam Offense","Pao Prio",2,1,0.6666666666666666
+"Psyspam Offense","Psyspam Offense",1,1,0.5
+"Psyspam Offense","Rain Offense",3,1,0.75
+"Psyspam Offense","Roaring SetUp",1,2,0.3333333333333333
+"Psyspam Offense","SUS Control",3,3,0.5
+"Psyspam Offense","SemiTR",2,3,0.4
+"Psyspam Offense","Spanish Balance",2,1,0.6666666666666666
+"Psyspam Offense","Sun HardTR",1,2,0.3333333333333333
+"Psyspam Offense","Sun Offense",5,2,0.7142857142857143
+"Psyspam Offense","Tailwind HO",3,9,0.25
+"Psyspam Offense","Turbo BloodMoon",1,7,0.125
+"Rain Offense","American Balance",2,1,0.6666666666666666
+"Rain Offense","Articuno Offense",1,1,0.5
+"Rain Offense","Dondozo-Tatsu",1,2,0.3333333333333333
+"Rain Offense","Gholdengo Control",1,1,0.5
+"Rain Offense","Japan Balance",2,1,0.6666666666666666
+"Rain Offense","KOG SetUp",3,3,0.5
+"Rain Offense","P2 Balance",1,2,0.3333333333333333
+"Rain Offense","Pao Prio",1,4,0.2
+"Rain Offense","Psyspam Offense",1,3,0.25
+"Rain Offense","Rain Offense",2,1,0.6666666666666666
+"Rain Offense","Roaring SetUp",7,3,0.7
+"Rain Offense","SUS Control",2,2,0.5
+"Rain Offense","SemiTR",4,1,0.8
+"Rain Offense","Spanish Balance",3,4,0.42857142857142855
+"Rain Offense","Sun HardTR",1,2,0.3333333333333333
+"Rain Offense","Sun Offense",1,2,0.3333333333333333
+"Rain Offense","Tailwind HO",2,6,0.25
+"Rain Offense","Turbo BloodMoon",2,2,0.5
+"Roaring SetUp","American Balance",0,1,0
+"Roaring SetUp","Articuno Offense",0,2,0
+"Roaring SetUp","Dondozo-Tatsu",1,0,1
+"Roaring SetUp","Gholdengo Control",2,4,0.3333333333333333
+"Roaring SetUp","KOG SetUp",4,3,0.5714285714285714
+"Roaring SetUp","P2 Balance",3,0,1
+"Roaring SetUp","Psyspam Offense",2,1,0.6666666666666666
+"Roaring SetUp","Rain Offense",3,6,0.3333333333333333
+"Roaring SetUp","Roaring SetUp",3,3,0.5
+"Roaring SetUp","SUS Control",0,1,0
+"Roaring SetUp","SemiTR",2,3,0.4
+"Roaring SetUp","Sun HardTR",7,2,0.7777777777777778
+"Roaring SetUp","Sun Offense",1,0,1
+"Roaring SetUp","Tailwind HO",3,4,0.42857142857142855
+"Roaring SetUp","Turbo BloodMoon",5,6,0.45454545454545453
+"SUS Control","Articuno Offense",1,1,0.5
+"SUS Control","Dondozo-Tatsu",0,1,0
+"SUS Control","Gholdengo Control",1,1,0.5
+"SUS Control","Japan Balance",1,2,0.3333333333333333
+"SUS Control","KOG SetUp",4,2,0.6666666666666666
+"SUS Control","P2 Balance",2,1,0.6666666666666666
+"SUS Control","P2 Control",0,2,0
+"SUS Control","Pao Prio",0,1,0
+"SUS Control","Psyspam Offense",3,3,0.5
+"SUS Control","Rain Offense",2,2,0.5
+"SUS Control","Roaring SetUp",1,0,1
+"SUS Control","SUS Control",2,2,0.5
+"SUS Control","SemiTR",2,0,1
+"SUS Control","Spanish Balance",2,3,0.4
+"SUS Control","Sun HardTR",0,1,0
+"SUS Control","Sun Offense",0,1,0
+"SUS Control","Tailwind HO",2,1,0.6666666666666666
+"SUS Control","Turbo BloodMoon",2,1,0.6666666666666666
+"SemiTR","American Balance",1,0,1
+"SemiTR","Articuno Offense",0,2,0
+"SemiTR","Dondozo-Tatsu",1,1,0.5
+"SemiTR","Gholdengo Control",5,5,0.5
+"SemiTR","Japan Balance",2,6,0.25
+"SemiTR","KOG SetUp",5,5,0.5
+"SemiTR","P2 Balance",2,0,1
+"SemiTR","P2 Control",0,1,0
+"SemiTR","Pao Prio",6,6,0.5
+"SemiTR","Psyspam Offense",3,3,0.5
+"SemiTR","Rain Offense",1,3,0.25
+"SemiTR","Roaring SetUp",3,2,0.6
+"SemiTR","SUS Control",0,2,0
+"SemiTR","SemiTR",4,4,0.5
+"SemiTR","Spanish Balance",1,2,0.3333333333333333
+"SemiTR","Sun HardTR",5,1,0.8333333333333334
+"SemiTR","Sun Offense",4,2,0.6666666666666666
+"SemiTR","Tailwind HO",1,6,0.14285714285714285
+"SemiTR","Turbo BloodMoon",8,7,0.5333333333333333
+"Spanish Balance","American Balance",2,0,1
+"Spanish Balance","Articuno Offense",0,2,0
+"Spanish Balance","Dondozo-Tatsu",2,3,0.4
+"Spanish Balance","Gholdengo Control",7,5,0.5833333333333334
+"Spanish Balance","Japan Balance",5,1,0.8333333333333334
+"Spanish Balance","KOG SetUp",6,2,0.75
+"Spanish Balance","P2 Control",1,2,0.3333333333333333
+"Spanish Balance","Pao Prio",3,1,0.75
+"Spanish Balance","Psyspam Offense",1,2,0.3333333333333333
+"Spanish Balance","Rain Offense",4,3,0.5714285714285714
+"Spanish Balance","SUS Control",3,2,0.6
+"Spanish Balance","SemiTR",2,1,0.6666666666666666
+"Spanish Balance","Spanish Balance",1,1,0.5
+"Spanish Balance","Sun HardTR",3,1,0.75
+"Spanish Balance","Sun Offense",2,1,0.6666666666666666
+"Spanish Balance","Tailwind HO",4,6,0.4
+"Spanish Balance","Turbo BloodMoon",2,1,0.6666666666666666
+"Sun HardTR","American Balance",1,1,0.5
+"Sun HardTR","Articuno Offense",1,1,0.5
+"Sun HardTR","Dondozo-Tatsu",1,2,0.3333333333333333
+"Sun HardTR","Gholdengo Control",4,5,0.4444444444444444
+"Sun HardTR","Japan Balance",2,2,0.5
+"Sun HardTR","KOG SetUp",2,4,0.3333333333333333
+"Sun HardTR","P2 Balance",1,1,0.5
+"Sun HardTR","P2 Control",1,0,1
+"Sun HardTR","Pao Prio",8,2,0.8
+"Sun HardTR","Psyspam Offense",2,1,0.6666666666666666
+"Sun HardTR","Rain Offense",2,1,0.6666666666666666
+"Sun HardTR","Roaring SetUp",1,6,0.14285714285714285
+"Sun HardTR","SUS Control",1,0,1
+"Sun HardTR","SemiTR",1,4,0.2
+"Sun HardTR","Spanish Balance",1,3,0.25
+"Sun HardTR","Sun HardTR",5,5,0.5
+"Sun HardTR","Sun Offense",5,4,0.5555555555555556
+"Sun HardTR","Tailwind HO",3,3,0.5
+"Sun HardTR","Turbo BloodMoon",6,4,0.6
+"Sun Offense","American Balance",1,0,1
+"Sun Offense","Articuno Offense",2,0,1
+"Sun Offense","Dondozo-Tatsu",1,0,1
+"Sun Offense","Gholdengo Control",4,4,0.5
+"Sun Offense","Japan Balance",4,4,0.5
+"Sun Offense","KOG SetUp",1,1,0.5
+"Sun Offense","P2 Balance",1,0,1
+"Sun Offense","P2 Control",1,0,1
+"Sun Offense","Pao Prio",1,0,1
+"Sun Offense","Psyspam Offense",2,5,0.2857142857142857
+"Sun Offense","Rain Offense",2,1,0.6666666666666666
+"Sun Offense","Roaring SetUp",0,1,0
+"Sun Offense","SUS Control",1,0,1
+"Sun Offense","SemiTR",2,3,0.4
+"Sun Offense","Spanish Balance",1,2,0.3333333333333333
+"Sun Offense","Sun HardTR",4,5,0.4444444444444444
+"Sun Offense","Tailwind HO",3,1,0.75
+"Sun Offense","Turbo BloodMoon",3,2,0.6
+"Tailwind HO","American Balance",3,0,1
+"Tailwind HO","Articuno Offense",3,3,0.5
+"Tailwind HO","Dondozo-Tatsu",1,1,0.5
+"Tailwind HO","Gholdengo Control",5,4,0.5555555555555556
+"Tailwind HO","Japan Balance",3,1,0.75
+"Tailwind HO","KOG SetUp",7,13,0.35
+"Tailwind HO","P2 Balance",2,3,0.4
+"Tailwind HO","P2 Control",2,0,1
+"Tailwind HO","Pao Prio",3,6,0.3333333333333333
+"Tailwind HO","Psyspam Offense",10,3,0.7692307692307693
+"Tailwind HO","Rain Offense",5,1,0.8333333333333334
+"Tailwind HO","Roaring SetUp",3,3,0.5
+"Tailwind HO","SUS Control",1,2,0.3333333333333333
+"Tailwind HO","SemiTR",6,0,1
+"Tailwind HO","Spanish Balance",7,4,0.6363636363636364
+"Tailwind HO","Sun HardTR",3,3,0.5
+"Tailwind HO","Sun Offense",1,3,0.25
+"Tailwind HO","Tailwind HO",5,5,0.5
+"Tailwind HO","Turbo BloodMoon",5,5,0.5
+"Turbo BloodMoon","American Balance",1,3,0.25
+"Turbo BloodMoon","Articuno Offense",1,1,0.5
+"Turbo BloodMoon","Dondozo-Tatsu",0,2,0
+"Turbo BloodMoon","Gholdengo Control",1,6,0.14285714285714285
+"Turbo BloodMoon","Japan Balance",2,0,1
+"Turbo BloodMoon","KOG SetUp",10,6,0.625
+"Turbo BloodMoon","P2 Balance",2,3,0.4
+"Turbo BloodMoon","P2 Control",2,3,0.4
+"Turbo BloodMoon","Pao Prio",2,2,0.5
+"Turbo BloodMoon","Psyspam Offense",7,1,0.875
+"Turbo BloodMoon","Rain Offense",2,2,0.5
+"Turbo BloodMoon","Roaring SetUp",6,5,0.5454545454545454
+"Turbo BloodMoon","SUS Control",1,2,0.3333333333333333
+"Turbo BloodMoon","SemiTR",7,8,0.4666666666666667
+"Turbo BloodMoon","Spanish Balance",1,2,0.3333333333333333
+"Turbo BloodMoon","Sun HardTR",4,6,0.4
+"Turbo BloodMoon","Sun Offense",2,3,0.4
+"Turbo BloodMoon","Tailwind HO",5,4,0.5555555555555556
+"Turbo BloodMoon","Turbo BloodMoon",3,3,0.5
