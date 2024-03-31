@@ -1,7 +1,7 @@
 import requests
 import pandas as pd
 import re
-
+#%%
 def obtener_datos_lista(torneo_id):
     url = f"https://play.limitlesstcg.com/api/tournaments/{torneo_id}/standings"
     api_key = "1e7f7868e9d5277dcfcac6c15fbd0ec2"
@@ -42,6 +42,8 @@ def obtener_datos_lista(torneo_id):
     a = a[column_order]
     return a
 
+a=obtener_datos_lista("6601700561164605cc78dca5")
+#%%
 def obtener_datos_rondas(torneo_id):
     # URL del torneo
     api_key = "1e7f7868e9d5277dcfcac6c15fbd0ec2"
@@ -112,8 +114,8 @@ def obtener_datos_rondas(torneo_id):
 
     # Devolver el DataFrame final
     return rondas
-
-
+a=obtener_datos_rondas("6601700561164605cc78dca5")
+#%%
 url = "https://play.limitlesstcg.com/api/tournaments"
 api_key = "1e7f7868e9d5277dcfcac6c15fbd0ec2"
 
@@ -125,7 +127,7 @@ headers = {
 
 # Parámetros de consulta opcionales (por ejemplo, limit para especificar la cantidad de resultados)
 params = {
-    "limit": 80,
+    "limit": 100,
     "game": "VGC",
     'format': 'SVF'
 }
@@ -137,9 +139,8 @@ response
 data = response.json()
 
 tours = pd.DataFrame(data)[pd.DataFrame(data)['players'] > 80][['id', 'name']]
-tours
-tours['id']
 
+#%%
 def combinar_datos_torneos(tours):
     # Crear un DataFrame vacío para almacenar los resultados
     resultados = pd.DataFrame()
@@ -154,7 +155,7 @@ def combinar_datos_torneos(tours):
 
         # Agregar las columnas adicionales
         df_lista['Torneo'] = nombre_torneo
-        df_lista['Tipo_torneo'] = 'no-oficial'
+        df_lista['Tipo_torneo'] = 'No-Oficial'
 
         # Combina los DataFrames y agrega los resultados al DataFrame principal
         resultado_torneo = pd.merge(df_lista, df_rondas, left_on='player', right_on='Nombre', how='inner').drop('Nombre', axis=1)

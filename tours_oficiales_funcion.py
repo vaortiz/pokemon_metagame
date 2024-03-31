@@ -535,4 +535,4 @@ def scrape_standings_oficial(url):
     
     return df3
 
-siete=scrape_standings_oficial("https://standings.stalruth.dev/2024/special-utrecht/masters/")
+siete=scrape_standings_oficial("https://standings.stalruth.dev/2024/regional-vancouver/masters/315")
