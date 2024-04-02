@@ -245,6 +245,8 @@ for i in range(0, len(fact_player_tour)):
 
 # Restablecer el índice del DataFrame resultante
 team_list.reset_index(drop=True, inplace=True)
+team_list.loc[team_list['Teratipo'].str.startswith('Stellar\n-'), 'Mov4'] = team_list['Teratipo'].str.split('\n-').str[1]
+team_list.loc[team_list['Teratipo'].str.startswith('Stellar\n-'), 'Teratipo'] = 'Stellar'
 #%%
 
 round_list = pd.DataFrame()
